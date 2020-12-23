@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make some noise!</title>
+  </head>
+  <body>
+    <main>
+      <div>Press keys A S D F G H J K L : " \</div>
+      <div>Key Pressed:</div>
+      <div id="key-display">-</div>
+      <div>
+        <label for="octave">Select Octave</label>
+        <select name="octave" id="octave">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected="selected">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+      <div>
+        <label for="wave-type">Select oscillator wave type</label>
+        <select name="wave-type" id="wave-type">
+          <option value="sine">sine</option>
+          <option value="sawtooth">sawtooth</option>
+          <option value="square">square</option>
+          <option value="triangle">triangle</option>
+        </select>
+      </div>
+    </main>
+    <script src="./built/app.js" type="module"></script>
+  </body>
+</html>
